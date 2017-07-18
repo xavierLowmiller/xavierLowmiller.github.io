@@ -1,6 +1,6 @@
 ---
 layout: default
-title: about XML
+title: about xml
 ---
 # {{ page.title }}
 

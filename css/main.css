@@ -4,6 +4,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.03em;
+    line-height: 1.3em;
 }
 
 body {
@@ -35,8 +36,6 @@ h2 {
 p {
     font-weight: 300;
     font-size: 1.em;
-    line-height: 1.3em;
-    color: #444;
 }
 .container {
     margin: 40px auto 60px;
@@ -55,6 +54,10 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.3em;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 ul.posts li {
