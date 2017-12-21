@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "hello, world!"
+title: "Hello, World!"
 date: 2017-06-03
 ---
 Hi, I'm Xaver.

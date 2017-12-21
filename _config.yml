@@ -2,3 +2,5 @@ name: XML
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 repository: xaverlohmueller/xaverlohmueller.github.io
+highlighter: rouge
+github: [metadata]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "books I like"
+title: "Books I Like"
 date: 2017-07-17
 ---
 In here, I'll be listing some books (about programming) I like.

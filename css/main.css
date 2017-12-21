@@ -1,15 +1,14 @@
 * {
     color: #212121;
-    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.03em;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
-
 body {
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
     margin: 60px auto;
-    width: 70%;
+    width: 60%;
 }
 nav ul, footer ul {
     list-style: none;
@@ -35,7 +34,6 @@ h2 {
 }
 p {
     font-weight: 300;
-    font-size: 1.em;
 }
 .container {
     margin: 40px auto 60px;
@@ -50,16 +48,24 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.3em;
 }
-
 li {
     margin-bottom: 10px;
 }
-
+.post li {
+    font-weight: 300;
+}
 ul.posts li {
     list-style: none;
+}
+.highlight, .highlighter-rouge {
+    font-family: SFMono-Regular, Inconsolata, Menlo, Courier, monospace;
+    font-size: 1.1em;
+}
+.highlight {
+  border-radius: 6px;
+  padding: 5px 15px;
 }
