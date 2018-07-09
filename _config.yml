@@ -1,4 +1,4 @@
-name: XML
+title: XML
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 repository: xaverlohmueller/xaverlohmueller.github.io
