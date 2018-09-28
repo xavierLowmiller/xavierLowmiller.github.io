@@ -11,8 +11,8 @@ I was with the company before that as a working student for about two years.
 I studied Computer Science from 2012 to 2016 at [TH Nürnberg][2].<br>
 My bachelor thesis is about [Swift][3].
 
-From 2009 to 2012 I mostly spent my time failing at mechanical
-engineering in [Erlangen][4].
+From 2009 to 2012 I mostly spent my time failing at mechanical engineering 
+in [Erlangen][4].
 
 Before all that, I spent my time mostly going to school in [Schwabach][5].<br>
 Except for that one year I spent in [Woodbury, NJ][6].

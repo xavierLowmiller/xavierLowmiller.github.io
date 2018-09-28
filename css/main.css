@@ -21,7 +21,7 @@ nav ul li, footer ul li {
 a {
     font-weight: 400;
     text-decoration: none;
-    color: #c67777;
+    color: #7d4627;
 }
 a:hover {
     text-decoration: underline;
@@ -42,10 +42,10 @@ p {
     margin-top: 30px;
     font-size: .6em;
     font-style: italic;
-    color: #888;
+    color: #a8b6bf;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #a8b6bf;
     font-size: .8em;
 }
 ul.posts {
@@ -63,9 +63,17 @@ ul.posts li {
 }
 .highlight, .highlighter-rouge {
     font-family: SFMono-Regular, Inconsolata, Menlo, Courier, monospace;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .highlight {
   border-radius: 6px;
   padding: 5px 15px;
+}
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+.main-title {
+    font-size: 3em;
 }
