@@ -49,12 +49,17 @@ They are much harder to remove than to add to a codebase.
 You wouldn't believe in what ways an app can depend on libraries,
 and what breaks when you remove them.
 
-So, I try to start with no by default:
+So, try to start with no by default:
 Implement that bar chart yourself before you pull in a 
 [feature-rich 17000 LoC package][Charts].
 Consume your 3 endpoints using URLSession instead of Alamofire.
 
 You can always say yes to the dependency later, when things get more complex.
+
+Don't write your own cURL logger.
+Don't invent you own asynchronous image cache.
+And, whatever you do, don't implement cryptography yourself
+(unless you really know what you're doing).
 
 ## Does it have tests?
 
@@ -69,8 +74,9 @@ It's a sign that people thought about their APIs.
 It's a sign that somebody cares.
 
 This extends to other marks of quality.
-Look for documentation, roadmaps, project vision, and general health.
-Carthage (or even SPM) support is also a big mark of quality to me.
+Look for documentation, roadmaps, [project vision][Moya Vision], 
+and general health.
+Carthage (or even SPM) support is also a mark of quality to me.
 
 Dependencies have bugs, too.
 When you add a dependency, these bugs become your bugs affecting your users.
@@ -79,7 +85,15 @@ When you add a dependency, these bugs become your bugs affecting your users.
 
 You should always have a backup plan.
 
-`<Tweet of John Sundell about support contracts>`
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Much of the debate about whether or not to use 3rd party 
+frameworks disappear when teams take ownership of their dependencies.<br><br>
+Open source != a support contract. If you’re not prepared to fix issues in your 
+dependencies then they’re basically tech debt the minute you add them 🙂</p>
+&mdash; John Sundell (@johnsundell)
+<a href="https://twitter.com/johnsundell/status/1041669114882940928?ref_src=twsrc%5Etfw">
+September 17, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Ideally, you can take over the dependency by contributing or even becoming a
 maintainer. This helps out other people, too.
@@ -119,12 +133,21 @@ making your life easier, or harder.
 
 Dependencies tend to require even more dependencies.
 You have to decide if you agree with the choices.
-Since you never really asked for these, you don't get much benefit from them
-while having to pay the costs.
+Since you never really asked for these, you typically 
+don't get much benefit from them while having to pay all the costs.
 
 Furthermore, some clients require all dependencies to be audited.
-Can you do this for the hundreds of npm packages that [React Native][]
+Can this be done for the hundreds of npm packages that [React Native][]
 depends on?
+
+## Recap: A handy chart of some dependencies I use
+
+|                                   | Result | RxSwift | Moya |   |
+|-----------------------------------|--------|---------|------|---|
+| Are you going to need it?         |    🚫  |         |      |   |
+| What happens if you take it away? |        |      🚫 |      |   |
+| Is it worth the cost?             |        |      ✅ |    ✅ |   |
+| Does it have dependencies?        |     0  |      0  |    ⚠️ |   |
 
 ---
 
@@ -132,8 +155,8 @@ depends on?
 [Getting Real]: https://basecamp.com/books/Getting%20Real.pdf
 [Charts]: https://github.com/danielgindi/Charts
 [Parse Shutdown]: https://duckduckgo.com/?q=parse+shutdown
-[Moya Vision]: https://
-[Result Pod]: https://
-[RxSwift]: https://
-[Realm]: https://
-[React Native]: https://
+[Moya Vision]: https://github.com/Moya/Moya/blob/master/Vision.md
+[Result Pod]: https://github.com/antitypical/Result
+[RxSwift]: https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md#getting-started
+[Realm]: https://github.com/realm/realm-cocoa
+[React Native]: https://facebook.github.io/react-native/
