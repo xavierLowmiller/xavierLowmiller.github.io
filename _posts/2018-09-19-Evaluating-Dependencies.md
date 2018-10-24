@@ -4,7 +4,28 @@ title: "Evaluating Dependencies"
 date: 2018-09-19
 ---
 
-`<Some interesting introduction paragraph>`
+As software engineers, we stand on the shoulders of giants. We are so far from
+the iconic Ones and Zeros that our profession is supposedly all about. Sure,
+sometimes we write some C code (which, as a Swift developer, might as well be
+assembly), but C is already so many layers away from the metal you can barely
+see the ground.
+
+With many of today's technologies, it doesn't make sense to even consider not
+using them. Sure, you might be able to write an iOS app in pure C (or even
+assembly) without using UIKit, but this has little more merit beyond the
+[academic exercise][Link to C iOS app].
+
+With the open source movement, it's common to rely on the code other people
+publish. Package managers like Cocoapods and Carthage make this easy for us.
+Maven Central offers <x> packages to JVM developers.
+Our friends in web development are the butts of many npm-related jokes.
+
+The maintainers on GitHub are our modern giants.
+
+The difference here is that we have a choice. And whenever we have a choice,
+there are tradeoffs. <Insert Kent Beck here>
+
+This post lists the questions I ask myself before dropping in a framework.
 
 ## Peks & Problems
 
@@ -61,7 +82,7 @@ Don't invent you own asynchronous image cache.
 And, whatever you do, don't implement cryptography yourself
 (unless you really know what you're doing).
 
-## Does it have tests?
+## Is it well maintained?
 
 Alamofire currently has 439 unit test cases.
 
@@ -122,18 +143,18 @@ When it goes away, all of your app will break.
 Some SDKs cost money.
 While this should be considered, open source packages have a price as well:
 
-[Some libraries][RxSwift] are harder to learn and integrate than others.
+[Some libraries][RxSwift] can have a steep learning curve for you and your team.
 Others are tough to integrate, to update, or to maintain during 
 operating system upgrades.
 
 Always run a cost/benefit analysis in your head to see if a dependency is
-making your life easier, or harder.
+actually making your life easier, or harder.
 
 ## Does it have dependencies?
 
 Dependencies tend to require even more dependencies.
 You have to decide if you agree with the choices.
-Since you never really asked for these, you typically 
+Since you never really asked for these, you typically
 don't get much benefit from them while having to pay all the costs.
 
 Furthermore, some clients require all dependencies to be audited.
