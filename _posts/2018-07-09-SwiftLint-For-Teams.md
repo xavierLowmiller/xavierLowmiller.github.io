@@ -147,8 +147,6 @@ fi
 
 You can also find the current version [on our GitHub][7].
 
----
-
 [1]: https://github.com/realm/SwiftLint
 [2]: https://github.com/realm/SwiftLint/blob/master/Rules.md
 [3]: https://developer.github.com/v3/repos/contents/
