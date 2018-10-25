@@ -1,6 +1,5 @@
 ---
 layout: default
-title: About XML
 ---
 ## What have I been doing all this time?
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: about xml
+title: About Xavier
 ---
 # {{ page.title }}
 
