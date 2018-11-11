@@ -1,3 +1,4 @@
+.highlight pre code { color: #f8f8f2 } /* Default code color */
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
