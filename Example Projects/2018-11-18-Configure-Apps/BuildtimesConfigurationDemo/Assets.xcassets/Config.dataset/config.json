@@ -1,0 +1,5 @@
+{
+    "backendUrl": "https://dev.example.com",
+    "analyticsKey": "s3cr3t-k3y",
+    "redesignedLoginEnabled": false
+}
