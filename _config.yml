@@ -1,6 +1,8 @@
-title: XML
+title: iOS Light & Magic
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 repository: xaverlohmueller/xaverlohmueller.github.io
 highlighter: rouge
 github: [metadata]
+plugins:
+  - jekyll-seo-tag
