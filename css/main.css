@@ -3,12 +3,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.03em;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 body {
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
     margin: 60px auto;
-    width: 60%;
+    width: 45%;
 }
 nav ul, footer ul {
     list-style: none;
@@ -77,4 +77,10 @@ img {
 }
 .main-title {
     font-size: 3em;
+}
+
+@media all and (max-width: 600pt) {
+    body {
+        width: 85%;
+    }
 }
