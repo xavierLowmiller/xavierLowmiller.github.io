@@ -9,6 +9,9 @@ body {
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
     margin: 4em auto;
 }
+nav {
+    text-align: center;
+}
 nav ul, footer ul {
     list-style: none;
     font-weight: bold;
