@@ -7,8 +7,7 @@
 }
 body {
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
-    margin: 60px auto;
-    width: 45%;
+    margin: 4em auto;
 }
 nav ul, footer ul {
     list-style: none;
@@ -16,7 +15,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.4em;
 }
 a {
     font-weight: 400;
@@ -26,7 +25,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
-pre { white-space: pre; overflow: auto; }
+pre { 
+    white-space: pre; 
+    overflow: auto;
+}
 h1 {
     font-size: 2em;
 }
@@ -38,6 +40,7 @@ p {
 }
 .container {
     margin: 40px auto 60px;
+    width: 45%;
 }
 .meta {
     margin-top: 30px;
@@ -50,11 +53,11 @@ footer {
     font-size: .8em;
 }
 ul.posts {
-    margin: 20px auto 40px;
+    margin: 1.3em auto 2.6em;
     font-size: 1.3em;
 }
 li {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 .post li {
     font-weight: 300;
@@ -75,12 +78,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+.sub-header {
+    text-align: center;
+}
 .main-title {
     font-size: 3em;
+    text-align: center;
 }
 
 @media all and (max-width: 600pt) {
-    body {
+    .container {
         width: 85%;
     }
 }
