@@ -4,6 +4,7 @@
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.03em;
     line-height: 2em;
+    font-size: 0.975em;
 }
 body {
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
@@ -54,7 +55,8 @@ p {
 }
 .container {
     margin: 40px auto 60px;
-    width: 45%;
+    width: 55%;
+    font-size: 1.2em;
 }
 .meta {
     margin-top: 30px;
@@ -107,4 +109,29 @@ img {
     .container {
         width: 85%;
     }
+}
+
+/* Tables */
+.post table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.post th, .post td {
+    padding: 0 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post th {
+    text-align: center;
+}
+
+.post td {
+    text-align: center;
+}
+
+.post tr:hover {
+    background-color: whitesmoke;
 }
