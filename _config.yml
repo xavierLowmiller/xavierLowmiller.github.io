@@ -1,8 +1,13 @@
 title: Xavier Lowmiller's Blog
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-repository: xaverlohmueller/xaverlohmueller.github.io
+repository: xavierLowmiller/xavierLowmiller.github.io
 highlighter: rouge
 github: [metadata]
+author: xavierLowmiller
+url: https://xavierlowmiller.github.io
+description: A site about iOS programming, and my life in general
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
