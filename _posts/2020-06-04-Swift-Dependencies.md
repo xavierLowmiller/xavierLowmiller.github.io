@@ -18,7 +18,7 @@ As the community grew and more libraries were written, discoverability was anoth
 The value of CocoaPods to the iOS community cannot be described by words. It’s such a great example of what a community can do, and has been the de facto default package manager for iOS projects for years.
 Its impact on the whole iOS ecosystem can’t be overstated. The [website](https://CocoaPods.org) is the go-to place for discovering iOS dependencies. Publishing a library or framework for iOS without CocoaPods support is barely imaginable.
 
-This is the Podfile used for the experiments can be found [here](https://github.com/xavierLowmiller/Swift-Dependency-Analysis/blob/master/Cocoapods/Podfile).
+This is the Podfile used for the experiments can be found [here](https://github.com/xavierLowmiller/Swift-Dependency-Analysis/blob/main/Cocoapods/Podfile).
 
 ### Carthage
 
@@ -26,7 +26,7 @@ Shortly after Swift came around, Carthage was born. It’s written in Swift itse
 It’s the simple ([not easy](https://www.infoq.com/presentations/Simple-Made-Easy/)) dependency manager for Swift projects. There’s some beautiful ideas behind Carthage, like being decentralized and imposing as few changes to your Xcode project as possible.
 There’s a [great writeup](https://github.com/Carthage/Carthage#differences-between-carthage-and-CocoaPods) on their GitHub page that I don’t need to repeat here. The bottom line is that it’s simpler than CocoaPods but doesn’t have (and won’t ever have) as many features. This makes the setup a little more work, but once it’s done it’s unlikely to need adjustments in the future.
 
-This is the Cartfile used for the experiments can be found [here](https://github.com/xavierLowmiller/Swift-Dependency-Analysis/blob/master/Carthage/Cartfile).
+This is the Cartfile used for the experiments can be found [here](https://github.com/xavierLowmiller/Swift-Dependency-Analysis/blob/main/Carthage/Cartfile).
 
 ### Swift Package Manager
 
